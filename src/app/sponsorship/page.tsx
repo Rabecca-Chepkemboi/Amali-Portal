@@ -64,7 +64,7 @@ const Sponsorship = () => {
   return (
     <Layout>
       <div className="bg-white w-[1600px] h-[100vh] flex items-center">
-        <div className="ml-24" style={{ minHeight: '600px', overflowY: 'auto' }}>
+        <div className="ml-32" style={{ minHeight: '600px', overflowY: 'auto' }}>
           <div>
             <div className="relative mr-[732px] flex text-black items-center">
               <input
@@ -86,7 +86,7 @@ const Sponsorship = () => {
             </div>
           </div>
           {suggestions.length > 0 && (
-            <div className="bg-white border border-gray-300 mr-4 rounded-b-lg absolute z-10 w-1/2">
+            <div className="mt-2 bg-white border border-gray-300 mr-4 rounded-b-lg absolute z-10 w-1/2">
               {Array.isArray(suggestions) &&
                 suggestions.map((suggestion) => (
                   <div
@@ -104,7 +104,7 @@ const Sponsorship = () => {
               Sponsorship
             </h2>
           </div>
-          <div className="flex flex-wrap gap-12">
+          <div className="flex flex-wrap gap-10 mb-4">
             {Array.isArray(filteredAthletes) &&
               filteredAthletes.map((athlete, index) => (
                 <div
@@ -128,7 +128,7 @@ const Sponsorship = () => {
               ))}
           </div>
           {athletes.length > itemsPerPage && (
-            <div className="flex justify-center">
+            <div className="flex justify-center mt-4">
               {[1, 2, 3, 4, 5].map((page) => (
                 <button
                   key={page}
