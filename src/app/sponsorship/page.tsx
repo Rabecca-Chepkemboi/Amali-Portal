@@ -86,7 +86,7 @@ const Sponsorship = () => {
             </div>
           </div>
           {suggestions.length > 0 && (
-            <div className="mt-2 bg-white border border-gray-300 mr-4 rounded-b-lg absolute z-10 w-1/2">
+            <div className="bg-white border border-gray-300 mr-4 rounded-b-lg absolute z-10 w-1/2">
               {Array.isArray(suggestions) &&
                 suggestions.map((suggestion) => (
                   <div
@@ -128,7 +128,7 @@ const Sponsorship = () => {
               ))}
           </div>
           {athletes.length > itemsPerPage && (
-            <div className="flex justify-center mt-4">
+            <div className="flex justify-center">
               {[1, 2, 3, 4, 5].map((page) => (
                 <button
                   key={page}
