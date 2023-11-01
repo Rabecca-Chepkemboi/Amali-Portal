@@ -17,7 +17,7 @@ const Contact = () => {
                 Contact Us
               </h1>
               <div className="flex flex-col md:flex-row">
-                <div className="flex-column mt-64">
+                <div className="flex-column mt-32">
                   <div className="md:flex-1 md:mr-6 mt-4 ml-24">
                     <p className="text-3xl text-black font-merriweather">Name</p>
                     <input
@@ -58,7 +58,29 @@ const Contact = () => {
                     <hr className="my-4 border-t-3 border-black h-6 w-96" />
                   </div>
                 </div>
-                <div className="md:flex-1 mt-8 md:mt-0 ml-64">
+                <div className="mt-32 md:mt-0 ml-[696px] absolute top-0">
+  <button
+    type="submit"
+    className="bg-green-700 border-6 border-gray-500 text-white py-64 px-12 rounded-lg w-full h-32 mt-96 ml-36 cursor-pointer font-merriweather hover:border-green-700 flex flex-col justify-center items-center"
+  >
+    <div className="text-center">
+      <h1 className="text-4xl font-bold mb-24 font-merriweather">INFO</h1>
+      <p className="mb-24">
+        <a href="mailto:amaliathletes@gmail.com">
+          <FaEnvelope className="inline-block mr-5 text-4xl" />
+          amaliathletes@gmail.com
+        </a>
+      </p>
+      <p>
+        <a href="tel:+254759942644">
+          <FaPhone className="inline-block mr-16 text-4xl mb-2" />
+          +254 759942644
+        </a>
+      </p>
+    </div>
+  </button>
+</div>
+                {/* <div className="mt-32 md:mt-0 ml-64">
                   <button
                     type="submit"
                     className="bg-green-700 border-6 border-gray-500 text-white py-64 px-12 rounded-lg w-full h-32 mt-64 ml-36 cursor-pointer font-merriweather hover:border-green-700 flex flex-col justify-center items-center"
@@ -73,15 +95,15 @@ const Contact = () => {
                       </p>
                       <p>
                         <a href="tel:+254759942644">
-                          <FaPhone className="inline-block mr-2 text-4xl mb-2" />
+                          <FaPhone className="inline-block mr-16 text-4xl mb-2" />
                           +254 759942644
                         </a>
                       </p>
                     </div>
                   </button>
-                </div>
+                </div> */}
               </div>
-              <div className="mt-12">
+              <div>
                 <button className="bg-green-700 text-white text-3xl py-4 px-4 w-96 h-24 ml-24 rounded-lg font-merriweather cursor-pointer text-center">
                   SEND
                 </button>
