@@ -11,13 +11,13 @@ const SideBar = () => {
   }, []);
 
   return (
-    <div className="flex flex-col w-1/6 h-screen bg-green-700 text-white p-4 font-merriweather">
+    <div className="flex fixed flex-col w-1/6 h-screen bg-green-700 text-white p-4 font-merriweather">
       <div className="ml-12 mt-2 flex items-center">
         <a href="/login">
           <img src="/Images/Amalilogo.png" alt="amali" />
         </a>
       </div>
-      <div className="mt-36">
+      <div className="mt-30 fixed">
         <div className="mr-6 mb-16 ml-[-11px]">
           <a
             href="/dashboard"
