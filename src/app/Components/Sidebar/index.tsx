@@ -18,7 +18,7 @@ const SideBar = () => {
         </a>
       </div>
       <div className="mt-36">
-        <div className="mr-6 mb-16">
+        <div className="mr-6 mb-16 ml-[-11px]">
           <a
             href="/dashboard"
             className={`flex ${
@@ -34,7 +34,7 @@ const SideBar = () => {
           </a>
         </div>
         <hr className="w-37 ml-20 mr-16 mb-10" />
-        <div className="ml-4 mb-16">
+        <div className="mr-6 mb-16 ml-[-11px]">
           <a
             href="/sponsorship"
             className={`flex ${
@@ -50,7 +50,7 @@ const SideBar = () => {
           </a>
         </div>
         <hr className="w-37 ml-20 mr-12 mb-16" />
-        <div className="ml-4 mb-10 mt-4">
+        <div className="mr-6 mb-16 ml-[-11px]">
           <a
             href="/contact"
             className={`flex ${

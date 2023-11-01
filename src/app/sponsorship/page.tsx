@@ -64,7 +64,7 @@ const Sponsorship = () => {
   return (
     <Layout>
       <div className="bg-white w-[1600px] h-[100vh] flex items-center">
-        <div className="ml-64" style={{ minHeight: '600px', overflowY: 'auto' }}>
+        <div className="ml-24" style={{ minHeight: '600px', overflowY: 'auto' }}>
           <div>
             <div className="relative mr-[732px] flex text-black items-center">
               <input
