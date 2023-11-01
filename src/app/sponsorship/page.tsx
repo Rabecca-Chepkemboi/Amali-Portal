@@ -63,8 +63,8 @@ const Sponsorship = () => {
   };
   return (
     <Layout>
-      <div className="bg-white w-[1600px] h-[100vh] flex items-center">
-        <div className="ml-32" style={{ minHeight: '600px', overflowY: 'auto' }}>
+      <div className="bg-white w-[1600px] h-[100vh] mt-4 fixed flex items-center">
+        <div className="ml-32" style={{ minHeight: '100px', overflowY: 'auto' }}>
           <div>
             <div className="relative mr-[732px] flex text-black items-center">
               <input
@@ -86,7 +86,7 @@ const Sponsorship = () => {
             </div>
           </div>
           {suggestions.length > 0 && (
-            <div className="mt-2 bg-white border border-gray-300 mr-4 rounded-b-lg absolute z-10 w-1/2">
+            <div className="bg-white border border-gray-300 mr-4 rounded-b-lg absolute z-10 w-1/2">
               {Array.isArray(suggestions) &&
                 suggestions.map((suggestion) => (
                   <div
