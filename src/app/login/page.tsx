@@ -90,7 +90,7 @@ const Login = () => {
             {loading ? "Loading..." : "Sign In"}
           </button>
           <p className="text-2xl text-black font-merriweather text-black mr-64 mb-8">
-            Already have an account?{" "}
+            Don't have an account?{" "}
             <Link href="/registration">
               <span className="text-green-700 text-xl font-bold">Sign Up</span>
             </Link>
