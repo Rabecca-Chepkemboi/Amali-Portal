@@ -69,7 +69,7 @@ const Sponsorship = () => {
             <div className="relative mr-[732px] flex text-black items-center">
               <input
                 type="text"
-                className="w-1/2 p-2 pl-8 border text-black border-gray-300 rounded-l font-merriweather"
+                className="w-3/4 p-2 pl-8 border text-black border-gray-300 rounded-l font-merriweather"
                 placeholder="Search..."
                 value={searchQuery}
                 onChange={(e) => {
@@ -86,7 +86,7 @@ const Sponsorship = () => {
             </div>
           </div>
           {suggestions.length > 0 && (
-            <div className="bg-white border border-gray-300 mr-4 rounded-b-lg absolute z-10 w-1/2">
+            <div className="bg-white border text-black border-gray-300 mr-4 rounded-b-lg absolute z-10 w-1/2">
               {Array.isArray(suggestions) &&
                 suggestions.map((suggestion) => (
                   <div
