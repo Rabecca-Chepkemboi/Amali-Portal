@@ -18,7 +18,7 @@ const SideBar = () => {
         <a href="/login">
         {/* <Image src="/Images/Amalilogo.png" alt="amali" width={300} height={300}/> */}
         {/* layout="fixed" width={200} height={160} style={{ marginTop: '20px', marginRight: '70px' }} */}
-          <Image src="/Images/Amalilogo.png" alt="amali" width={200} height={160} />
+          <img src="/Images/Amalilogo.png" alt="amali"/>
         </a>
       </div>
       <div className="mt-[109px]">
