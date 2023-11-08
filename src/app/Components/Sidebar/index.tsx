@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from 'react';
 import { FaThLarge, FaHandshake, FaEnvelope } from 'react-icons/fa';
 import Image from 'next/image';
-// import amaliLogo from '/public/Images/Amalilogo.png';
 
 
 const SideBar = () => {
@@ -17,7 +16,6 @@ const SideBar = () => {
       <div className="ml-12 mt-2 flex items-center">
         <a href="/login">
         {/* <Image src="/Images/Amalilogo.png" alt="amali" width={300} height={300}/> */}
-        {/* layout="fixed" width={200} height={160} style={{ marginTop: '20px', marginRight: '70px' }} */}
           <img src="/Images/Amalilogo.png" alt="amali"/>
         </a>
       </div>
