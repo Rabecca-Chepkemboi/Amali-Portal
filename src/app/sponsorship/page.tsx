@@ -5,6 +5,9 @@ import Button from '../atoms/Button';
 import Buttons from '../atoms/Buttons';
 import Layout from '../Components/Layout';
 import useGetAthletes from '../hooks/useGetAthletes';
+import Image from 'next/image';
+
+
 interface AthletesData {
   id: number;
   full_name: string;
@@ -24,11 +27,20 @@ const Sponsorship = () => {
   const [selectedAthlete, setSelectedAthlete] = useState<AthletesData | null>();
   const itemsPerPage = 8;
   const [currentPage, setCurrentPage] = useState(1);
+
   useEffect(() => {
-    setFilteredAthletes(athletes.slice(0, itemsPerPage));
+    if (athletes) {
+      setFilteredAthletes(athletes.slice(0, itemsPerPage));
+    }
   }, [athletes]);
   const handleSearch = () => {
     const query = searchQuery.trim().toLowerCase();
+
+  // useEffect(() => {
+  //   setFilteredAthletes(athletes.slice(0, itemsPerPage));
+  // }, [athletes]);
+  // const handleSearch = () => {
+  //   const query = searchQuery.trim().toLowerCase();
     const filtered = athletes.filter(
       (athlete) =>
         athlete.full_name.toLowerCase().includes(query) ||
@@ -69,7 +81,7 @@ const Sponsorship = () => {
             <div className="relative mr-[732px] flex text-black items-center">
               <input
                 type="text"
-                className="w-1/2 p-2 pl-8 border text-black border-gray-300 rounded-l font-merriweather"
+                className="w-[1300px] p-2 pl-8 border text-black border-gray-300 rounded-l font-merriweather"
                 placeholder="Search..."
                 value={searchQuery}
                 onChange={(e) => {
@@ -86,7 +98,7 @@ const Sponsorship = () => {
             </div>
           </div>
           {suggestions.length > 0 && (
-            <div className="bg-white border border-gray-300 mr-4 rounded-b-lg absolute z-10 w-1/2">
+            <div className="bg-white border text-black border-gray-300 mr-4 rounded-b-lg absolute z-10 w-1/2">
               {Array.isArray(suggestions) &&
                 suggestions.map((suggestion) => (
                   <div
@@ -112,11 +124,15 @@ const Sponsorship = () => {
                   className="w-[300px] bg-gray-100 border border-gray-300 p-2 rounded-lg text-center"
                 >
                   <div className="w-42 h-32 bg-gray-300 rounded-lg mx-auto overflow-hidden">
-                    <img
+
+                  <img
                       src={athlete.profile_picture}
+                      width={200}
+                      height={160}
                       alt={`Image of ${athlete.full_name}`}
                       className="w-full h-full object-cover"
                     />
+
                   </div>
                   <p className="mt-4 font-bold text-black font-merriweather">
                     {athlete.full_name}
@@ -127,7 +143,7 @@ const Sponsorship = () => {
                 </div>
               ))}
           </div>
-          {athletes.length > itemsPerPage && (
+          {athletes && athletes.length > itemsPerPage && (
             <div className="flex justify-center mt-4">
               {[1, 2, 3, 4, 5].map((page) => (
                 <button
@@ -143,6 +159,23 @@ const Sponsorship = () => {
             </div>
           )}
         </div>
+
+          {/* {athletes.length > itemsPerPage && (
+            <div className="flex justify-center mt-4">
+              {[1, 2, 3, 4, 5].map((page) => (
+                <button
+                  key={page}
+                  onClick={() => handlePageChange(page)}
+                  className={`mx-2 px-4 py-2 rounded-lg border text-blue-600 cursor-pointer ${
+                    page === currentPage ? 'bg-blue-100' : ''
+                  }`}
+                >
+                  {page}
+                </button>
+              ))}
+            </div>
+          )}
+        </div> */}
       </div>
     </Layout>
   );
