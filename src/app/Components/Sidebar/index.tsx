@@ -18,7 +18,7 @@ const SideBar = () => {
       <Image src="/Images/Amalilogo.png" alt="amali" width={300} height={200} />
      </div>
       </div>
-      <div className="mt-[109px]">
+      <div className="mb-[129px]">
         <div className="mr-6 mb-16 ml-[-11px]">
           <a
             href="/dashboard"

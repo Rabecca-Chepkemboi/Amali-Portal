@@ -1,7 +1,7 @@
 "use client"
 import React from 'react';
 import Layout from '../Components/Layout';
-import { FaPhone, FaEnvelope } from 'react-icons/fa';
+import { FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 import { useCreateContact } from '../hooks/useCreateContact';
 
 
@@ -73,7 +73,7 @@ const Contact = () => {
       </p>
       <p>
         <a href="tel:+254759942644">
-          <FaPhone className="inline-block mr-16 text-4xl mb-2" />
+          <FaPhoneAlt className="inline-block mr-16 text-4xl mb-2" />
           +254 759942644
         </a>
       </p>
