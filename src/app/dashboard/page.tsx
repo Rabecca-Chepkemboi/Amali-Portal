@@ -2,7 +2,9 @@
 import Layout from '../Components/Layout';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Label } from 'recharts';
 import { useGetDonation } from '../hooks/useGetDonation';
-const Dashboard = () => {
+
+
+const Dashboard = () =>{
   const {
     amountData,
     totalAmount,
