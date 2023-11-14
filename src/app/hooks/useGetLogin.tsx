@@ -21,7 +21,7 @@ const useLogin = () => {
       setMessage(loginResult.success);
 
       setTimeout(() => {
-        router.push('/sponsorship');
+        router.push('/athlete/sponsorship');
       }, 3000);
     } else {
       setError(loginResult.error);

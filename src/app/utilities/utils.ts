@@ -107,3 +107,21 @@ export const getDonation= async()=>{
       return error.message
   }
 }
+
+
+export async function getAthleteDetails(athleteId:number) {
+  const url=`/api/get-details/${athleteId}`
+  try{
+      const response=await fetch(url)
+      if(!response.ok){
+          return `athlete with id ${athleteId} not found`
+      }
+      const result=await response.json()
+      return result;
+  }
+  catch(error){
+      return error
+  }  
+}
+
+

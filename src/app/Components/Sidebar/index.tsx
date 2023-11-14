@@ -14,10 +14,9 @@ const SideBar = () => {
   return (
     <div className="flex flex-col w-1/6 h-screen bg-green-700 text-white p-4 font-merriweather">
       <div className="ml-12 mt-2 flex items-center">
-        <a href="/login">
-        {/* <Image src="/Images/Amalilogo.png" alt="amali" width={300} height={300}/> */}
-          <img src="/Images/Amalilogo.png" alt="amali"/>
-        </a>
+      <div>
+      <Image src="/Images/Amalilogo.png" alt="amali" width={300} height={200} />
+     </div>
       </div>
       <div className="mt-[109px]">
         <div className="mr-6 mb-16 ml-[-11px]">
@@ -38,9 +37,9 @@ const SideBar = () => {
         <hr className="w-37 ml-20 mr-16 mb-10" />
         <div className="mr-6 mb-16 ml-[-11px]">
           <a
-            href="/sponsorship"
+            href="/athlete/sponsorship"
             className={`flex ${
-              activeLink === '/sponsorship'
+              activeLink === '/athlete/sponsorship'
                 ? 'bg-white hover:bg-white text-black'
                 : ''
             } w-72 p-8 rounded-lg text-2xl font-merriweather`}

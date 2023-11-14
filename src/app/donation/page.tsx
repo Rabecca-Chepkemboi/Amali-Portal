@@ -89,7 +89,7 @@ const Donation = () => {
             </div>
 
             <div className="mt-96 text-4xl font-bold text-green-700">
-              <a href="/">
+              <a href="/athlete/sponsorship">
                 <h1>Become A Sponsor</h1>
               </a>
             </div>

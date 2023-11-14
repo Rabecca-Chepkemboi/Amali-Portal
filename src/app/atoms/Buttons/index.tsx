@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 
+
 const Buttons = () => {
   return (
     <div>
@@ -14,3 +15,4 @@ const Buttons = () => {
 }
 
 export default Buttons;
+
